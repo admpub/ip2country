@@ -6,8 +6,9 @@ package ip2country
 
 import (
 	"encoding/base64"
-	"github.com/oschwald/maxminddb-golang"
 	"net"
+
+	"github.com/oschwald/maxminddb-golang"
 )
 
 type record struct {
@@ -18,15 +19,26 @@ type record struct {
 
 var reader *maxminddb.Reader
 
-func init() {
+func Init() {
+	reader, _ = maxminddb.FromBytes(Bytes())
+}
+
+func Bytes() []byte {
 	d2, _ := base64.StdEncoding.DecodeString(data)
-	reader, _ = maxminddb.FromBytes(d2)
+	return d2
+}
+
+func Reader() *maxminddb.Reader {
+	if reader == nil {
+		Init()
+	}
+	return reader
 }
 
 // Country returns ISO code of the country that given IP belongs to.
 func Country(ip net.IP) (string, error) {
 	r := &record{}
-	err := reader.Lookup(ip, &r)
+	err := Reader().Lookup(ip, &r)
 	if err != nil {
 		return "", err
 	}
