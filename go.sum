@@ -1,6 +1,0 @@
-github.com/cevatbarisyilmaz/ip2country v0.2.0 h1:Q+jaWIsBUCzdl0W2PcFGeZe5mkAUEb7GrmZbwFuGsSw=
-github.com/cevatbarisyilmaz/ip2country v0.2.0/go.mod h1:z/e4ok1eG9QOgl9h/QaJh4Biq34dRn0yVznupXD2iHQ=
-github.com/oschwald/maxminddb-golang v1.5.0 h1:rmyoIV6z2/s9TCJedUuDiKht2RN12LWJ1L7iRGtWY64=
-github.com/oschwald/maxminddb-golang v1.5.0/go.mod h1:3jhIUymTJ5VREKyIhWm66LJiQt04F0UCDdodShpjWsY=
-golang.org/x/sys v0.0.0-20191105231009-c1f44814a5cd h1:3x5uuvBgE6oaXJjCOvpCC1IpgJogqQ+PqGGU3ZxAgII=
-golang.org/x/sys v0.0.0-20191105231009-c1f44814a5cd/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=

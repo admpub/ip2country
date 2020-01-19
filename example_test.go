@@ -2,8 +2,9 @@ package ip2country_test
 
 import (
 	"fmt"
-	"github.com/cevatbarisyilmaz/ip2country"
 	"net"
+
+	"github.com/admpub/ip2country"
 )
 
 func ExampleCountry() {
